@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Minecraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="landing-page">
+
+        <img
+            src="images/backround.jpg"
+            class="background"
+            alt="Minecraft background"
+        >
+
+        <div class="menu-buttons">
+
+            <button id="playBtn">PLAY</button>
+
+            <button id="tutorialBtn">TUTORIAL</button>
+
+        </div>
+
+        
+        <div id="tutorialBox" class="tutorial-box">
+
+            <h2>How to Play</h2>
+
+            <p>Choose a tool from the toolbar.</p>
+
+            <p>Click a matching tile in the world.</p>
+
+            <p>The tile will be added to your inventory.</p>
+
+            <p>Click an inventory tile to place it back.</p>
+
+            <hr>
+
+            <p><strong>Axe</strong> → removes trees</p>
+
+            <p><strong>Pickaxe</strong> → removes rocks</p>
+
+            <p><strong>Shovel</strong> → removes dirt</p>
+
+            <button id="closeTutorialBtn">CLOSE</button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        const playBtn = document.getElementById("playBtn");
+        const tutorialBtn = document.getElementById("tutorialBtn");
+        const closeTutorialBtn = document.getElementById("closeTutorialBtn");
+        const tutorialBox = document.getElementById("tutorialBox");
+
+
+        
+        playBtn.addEventListener("click", function() {
+
+            window.location.href = "game.html";
+
+        });
+
+
+        
+        tutorialBtn.addEventListener("click", function() {
+
+            tutorialBox.style.display = "block";
+
+        });
+
+
+        
+        closeTutorialBtn.addEventListener("click", function() {
+
+            tutorialBox.style.display = "none";
+
+        });
+
+    </script>
+
+</body>
+</html>
