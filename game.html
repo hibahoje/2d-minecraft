@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Minecraft - Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-page">
+
+        <h1>2D Minecraft</h1>
+
+
+        
+        <div class="toolbar">
+
+            <button class="tool" data-tool="axe">
+              <img src="images/axe.png" alt="Axe">
+            </button>
+
+            <button class="tool" data-tool="pickaxe">
+              <img src="images/pickaxe.webp" alt="Pickaxe">
+            </button>
+
+            <button class="tool" data-tool="shovel">
+              <img src="images/shovel.png" alt="Shovel">
+            </button>
+
+        </div>
+
+
+        
+        <div id="world" class="world"></div>
+
+
+        
+        <div class="inventory">
+
+            <h2>Inventory</h2>
+
+            <div id="inventoryItems" class="inventory-items"></div>
+
+        </div>
+
+
+        
+        <button id="resetBtn" class="reset-button">
+            RESET WORLD
+        </button>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
